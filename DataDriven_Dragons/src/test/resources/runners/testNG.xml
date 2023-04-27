@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Test Suite">
+	<listeners>
+		<listener
+			class-name="com.aventstack.extentreports.testng.listener.ExtentITestListenerClassAdapter" />
+	</listeners>
+	<test name="Retail Test">
+		<!--  groups>
+			<run>
+				<exclude name="regression"></exclude>
+				<include name="sanity"></include>
+			</run>
+		</groups>-->
+		<classes>
+			<!-- class name="tek.sqa.framework.tests.RetailTest"></class> -->
+			<!-- class name="tek.sqa.framework.tests.TestNGAnnotations"></class> 
+			<class name="tek.sqa.framework.tests.TestNGAnnotations2"></class>-->
+			<class name="tek.sqa.framework.tests.DependantPractice"></class>
+		</classes>
+	</test>
+</suite>
